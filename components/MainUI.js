@@ -25,7 +25,7 @@ const MainUI = ({ currentPage }) => {
   return (
     <div className="relative flex flex-col items-center justify-between h-screen p-14">
       <h1 className="text-4xl lg:text-6xl font-extrabold bg-gradient-to-r from-neutral-700 to-neutral-900 text-transparent bg-clip-text border-b-4 border-gray-600 rounded-md">
-        Converto
+        converto
       </h1>
 
       <div className="relative p-14 mb-22 lg:w-full lg:max-w-7xl z-0 border border-neutral-300 bg-neutral-800 rounded-xl mt-[-100px]">
