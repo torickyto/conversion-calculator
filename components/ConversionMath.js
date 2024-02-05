@@ -2,11 +2,6 @@ let fromUnit = "kg";
 let toUnit = "lb.";
 let numEntry = [2, 3, 5, 23];
 
-//fuction to swap units
-function unitSwap() {
-    [fromUnit, toUnit] = [toUnit, fromUnit];
-}
-
 //take in 2 parameters (unit being converted from + unit being converted to)
 function createNewConverter(a = fromUnit, b = toUnit) {
     switch(`${a}-${b}`) {
@@ -33,4 +28,4 @@ let newArray = numEntry.map(createNewConverter);
 console.log(numEntry);
 console.log(newArray);
 
-export { fromUnit, toUnit, numEntry, unitSwap, createNewConverter, newArray };
+export {numEntry, createNewConverter, newArray };
