@@ -1,4 +1,4 @@
-//variables to hold units, change the defaults for these based on page
+//variables to hold units, (reference only) change the defaults for these on page, declare with let
 fromUnit = "kg";
 toUnit = "lb.";
 
