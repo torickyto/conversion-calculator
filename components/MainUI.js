@@ -1,5 +1,9 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import EmptyConversion from './EmptyConversion';
+import WeightConversion from './WeightConversion.js';
+import DistanceConversion from './DistanceConversion.js';
+import TemperatureConversion from './TemperatureConversion';
 
 const MainUI = () => {
   return (
@@ -16,15 +20,14 @@ const MainUI = () => {
       <div className="mb-28 grid text-center lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left">
         {/* Pounds to Kilograms */}
         <a
-          href=""
+          href="/poundsToKilograms"
           className="group rounded-lg border border-transparent p-4 lg:p-6 transition-colors hover:border-gray-300 hover:bg-neutral-800 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 flex flex-col items-center justify-center"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-xl font-bold group-hover:text-neutral-200`}>
-            Pounds to Kilograms{" "}
+          <h2 className={`mb-3 text-xl font-extrabold group-hover:text-neutral-200`}>
+            WEIGHT{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
             </span>
           </h2>
           <p className={`m-0 text-sm opacity-50 group-hover:text-neutral-200`}>
@@ -34,15 +37,14 @@ const MainUI = () => {
 
         {/* Miles to Kilometres */}
         <a
-          href=""
+          href="/milesToKilometers"
           className="group rounded-lg border border-transparent p-4 lg:p-6 transition-colors hover:border-gray-300 hover:bg-neutral-800 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 flex flex-col items-center justify-center"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-xl font-bold group-hover:text-neutral-200`}>
-            Miles to Kilometres{" "}
+          <h2 className={`mb-3 text-xl font-extrabold group-hover:text-neutral-200`}>
+            DISTANCE{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
             </span>
           </h2>
           <p className={`m-0 text-sm opacity-50 group-hover:text-neutral-200`}>
@@ -52,15 +54,14 @@ const MainUI = () => {
 
         {/* Celsius to Fahrenheit */}
         <a
-          href=""
+          href="/celsiusToFahrenheit"
           className="group rounded-lg border border-transparent p-4 lg:p-6 transition-colors hover:border-gray-300 hover:bg-neutral-800 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30 flex flex-col items-center justify-center"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-xl font-bold group-hover:text-neutral-200`}>
-            Celsius to Fahrenheit{" "}
+          <h2 className={`mb-3 text-xl font-extrabold group-hover:text-neutral-200`}>
+            TEMPERATURE{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
             </span>
           </h2>
           <p className={`m-0 text-sm opacity-50 group-hover:text-neutral-200`}>
