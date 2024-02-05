@@ -4,7 +4,7 @@ import MainUI from '../../components/MainUI';
 const page = () => {
   return (
     <main>
-      <MainUI />
+      <MainUI currentPage="WeightConversion"/>
     </main>
   )
 }

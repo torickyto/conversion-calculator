@@ -4,7 +4,7 @@ import MainUI from '../components/MainUI';
 export default function Home() {
   return (
     <main>
-      <MainUI />
+      <MainUI currentPage="EmptyConversion"/>
     </main>
   );
 };
