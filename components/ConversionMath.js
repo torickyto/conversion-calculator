@@ -54,3 +54,4 @@ newArray = numEntry.map(createNewConverter());
 //these are for testing input+returned values
 console.log(numEntry)
 console.log(newArray)
+00000000000000000000000000000000000
