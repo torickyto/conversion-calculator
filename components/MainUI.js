@@ -1,17 +1,19 @@
 import React from 'react';
+import EmptyConversion from './EmptyConversion';
 
 const MainUI = () => {
   return (
     <div className="relative flex flex-col items-center justify-between h-screen p-14">
-      <h1 className="text-4xl lg:text-6xl font-extrabold bg-gradient-to-r from-gray-600 to-gray-800 text-transparent bg-clip-text mb-8">
+      <h1 className="text-4xl lg:text-6xl font-extrabold bg-gradient-to-r from-gray-600 to-gray-800 text-transparent bg-clip-text">
         Converto
       </h1>
-      <p className="text-2xl font-bold bg-gradient-to-r from-gray-700 to-gray-800 text-transparent bg-clip-text mt-[-200px] opacity-30">
-        Select conversion below
-      </p>
+
+      <div className="relative p-14 mb-22 lg:w-full lg:max-w-7xl z-0 border border-gray-300 bg-neutral-800 rounded-xl mt-[-100px]">
+      <EmptyConversion />
+      </div>
 
 
-      <div className="mb-28 grid text-center lg:max-w-15xl lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left">
+      <div className="mb-28 grid text-center lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left">
         {/* Pounds to Kilograms */}
         <a
           href=""
