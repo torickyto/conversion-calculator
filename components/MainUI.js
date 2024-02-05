@@ -8,13 +8,13 @@ const MainUI = ({ currentPage }) => {
   let conversionType;
 
   switch (currentPage) {
-    case 'poundsToKilograms':
+    case 'WeightConversion':
       conversionType = <WeightConversion/>;
       break;
-    case 'milesToKilometers':
+    case 'DistanceConversion':
       conversionType = <DistanceConversion/>;
       break;
-    case 'celsiusToFahrenheit':
+    case 'TemperatureConversion':
       conversionType = <TemperatureConversion/>;
       break;
     default:
