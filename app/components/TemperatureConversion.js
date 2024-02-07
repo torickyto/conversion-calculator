@@ -2,17 +2,17 @@
 "use client"
 
 import React, { useState } from 'react';
-import { createNewConverter, unitSwap } from './ConversionMath';
+import { createNewConverter} from './ConversionMath';
 
-const DistanceConversion = () => {
+const TemperatureConversion = () => {
 
   // initialize the states (left value) and a function to update the states (right value)
   const [inputValue, setInputValue] = useState('');
   const [convertedValue, setConvertedValue] = useState('');
 
   // initialize the states for temperature conversion
-  const [fromUnit, setFromUnit] = useState('km');
-  const [toUnit, setToUnit] = useState('Miles');
+  const [fromUnit, setFromUnit] = useState('°C');
+  const [toUnit, setToUnit] = useState('°F');
 
   // function for swapping units being converted
   const handleSwapUnits = () => {
@@ -41,7 +41,7 @@ const DistanceConversion = () => {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold text-neutral-200 mb-11 text-center">DISTANCE</h2>
+      <h2 className="text-2xl font-bold text-neutral-200 mb-11 text-center">TEMPERATURE</h2>
 
       <div className="mb-4 flex items-center">
         <input
@@ -75,4 +75,4 @@ const DistanceConversion = () => {
   );
 };
 
-export default DistanceConversion;
+export default TemperatureConversion;
